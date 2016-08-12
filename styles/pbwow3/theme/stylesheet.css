@@ -102,7 +102,7 @@ body {
 }
 
 #site-description p.skiplink {
-	display: none;
+	display: inherit;
 }
 
 /* Common
@@ -135,13 +135,8 @@ body {
 	margin: 0;
 }
 
-.bg1	{
-	background: rgba(49, 49, 49, 0.75);
-}
-
-.bg2	{
-	background: rgba(27, 27, 27, 0.75);
-}
+.bg1 { background: rgba(49, 49, 49, 0.75); }
+.bg2 { background: rgba(27, 27, 27, 0.75); }
 
 #simple-wrap {
 	padding: 0 0 10px;
@@ -208,19 +203,9 @@ a.arrow-up:before, a.arrow-down:after, a.arrow-left:before, a.arrow-right:after 
 .forumbg .header a:active, .forabg .header a:active, th a:active { color: #00C0FF; }
 
 /* Post body links */
-.postlink {
-	border-bottom: 1px dotted #FFB019;
-}
-
-.postlink:hover {
-	background: none;
-	border-bottom-color: #00C0FF;
-	text-decoration: none;
-}
-
-.postlink:active {
-	border-bottom-color: #FFF;
-}
+.postlink 			{ border-bottom: 1px dotted #FFB019; }
+.postlink:hover 	{ border-bottom-color: #00C0FF; background: none; text-decoration: none; }
+.postlink:active 	{ border-bottom-color: #FFF; }
 
 /* Profile links */
 .postprofile a:hover, .postprofile dt.author a:hover, .search .postprofile a:hover {
@@ -442,7 +427,7 @@ hr {
 .forum-blocks dl {
 	display: block;
 	position: relative;
-	min-height: 115px;
+	min-height: 110px;
 	margin: 2px;
 	padding: 10px 8px;
 	background: #141414;
@@ -880,18 +865,17 @@ table.info tbody th {
 	background: #000 url("./images/portrait-frame-clean.gif") no-repeat 50% 50%;
 	display: inline-block;
 	float: none;
-	height: 64px;
-	margin: 1px auto 0;
+	margin: 2px auto 0;
 	padding: 8px 10px 11px 8px;
 	position: relative;
 	width: 64px;
+	height: 64px;
 	overflow: hidden;
 }
 
 .postprofile .avatar img {
 	width: 64px;
 	height: 64px;
-	padding: 0px;
 }
 
 .online .postprofile dt strong:before,
@@ -1554,14 +1538,6 @@ fieldset.submit-buttons input { padding: 4px 6px; }
 
 #message-box textarea { color: #CCC; }
 
-#message-box textarea.drag-n-drop {
-	outline-color: rgba(102, 102, 102, 0.5);
-}
-
-#message-box textarea.drag-n-drop-highlight {
-	outline-color: rgba(17, 163, 234, 0.5);
-}
-
 .inputbox {
 	background-color: #040D1A;
 	border-color: #7F7F7F;
@@ -1943,26 +1919,26 @@ dl.mini dt {
 }
 
 .pagination li a {
+	color: #CCC;
 	background-color: #1A1A1A;
 	border-color: #575757;
-	color: #CCC;
 }
 
 .pagination li a:hover,
 .pagination .active a:hover,
 .pagination .dropdown-visible a.dropdown-trigger,
 .nojs .pagination .dropdown-container:hover a.dropdown-trigger {
-	background-color: #000;
 	border-color: #FFF;
+	background-color: #000;
 	color: #FFF;
 	text-decoration: none;
 	box-shadow: 0 0 5px 1px rgba(0, 192, 255, 0.7);
 }
 
 .pagination li.active span {
+	color: #FFFFFF;
 	background-color: #0D1A2D;
 	border-color: #B28910;
-	color: #FFFFFF;
 }
 
 .pagination li.active span:hover {
@@ -2751,6 +2727,7 @@ input#pf_pbbnetavatar, label[for=pf_pbbnetavatar] {
 .icon-register > a:before 			{ content: "\f044"; }
 .icon-restore-permissions > a:before { content: "\f079"; }
 .icon-search > a:before 			{ content: "\f002"; }
+.icon-search-advanced > a:before 	{ content: "\f1de"; }
 .icon-search-self > a:before 		{ content: "\f007"; }
 .icon-search-unanswered > a:before 	{ content: "\f1ae"; }
 .icon-search-unread > a:before 		{ content: "\f06e"; }
@@ -2961,7 +2938,7 @@ body.pbwow3 #page-body:before {
 	.forum-blocks li.row,
 	.index-left .forum-blocks li.row {
 		width: 100%;
-		min-height: 60px;
+		min-height: inherit;
 	}
 
 	.forum-blocks li.row dl {

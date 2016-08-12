@@ -1,0 +1,4 @@
+<?php exit; ?>
+1502539418
+793
+a:5:{s:32:"785bb1ec51f7311084c4b059e7d42434";a:1:{i:0;a:4:{s:10:"named_path";s:47:"ext/paybas/pbwow/language/en/info_acp_pbwow.php";s:8:"ext_name";s:12:"paybas/pbwow";s:4:"path";s:29:"ext/paybas/pbwow/language/en/";s:8:"filename";s:18:"info_acp_pbwow.php";}}s:32:"2f285506473a3e5da4cd22d21bd069cb";a:0:{}s:32:"b9d1205534cbc644de32525ddcf8988e";a:0:{}s:32:"1ee02df95be3877b91d90b588bf682bc";a:1:{i:0;a:4:{s:10:"named_path";s:37:"language/en/acp/permissions_phpbb.php";s:8:"ext_name";s:1:"/";s:4:"path";s:16:"language/en/acp/";s:8:"filename";s:21:"permissions_phpbb.php";}}s:32:"bb419f1cf8f4430fbe9cb0ef40a06a5e";a:1:{i:0;a:4:{s:10:"named_path";s:37:"language/es/acp/permissions_phpbb.php";s:8:"ext_name";s:1:"/";s:4:"path";s:16:"language/es/acp/";s:8:"filename";s:21:"permissions_phpbb.php";}}}

@@ -1,0 +1,36 @@
+<!-- IF not S_IS_BOT -->
+	<!-- IF GTTIPS_WOWHEAD -->
+		<script src="//static.wowhead.com/widgets/power.js"></script>
+		<script>var wowhead_tooltips = { "colorlinks": true, "iconizelinks": true, "renamelinks": true }</script>
+	<!-- ENDIF -->
+	<!-- IF GTTIPS_DIABLO3 -->
+		<script src="//{GTTIPS_REGION}.battle.net/d3/static/js/tooltips.js"></script>
+	<!-- ENDIF -->
+	<!-- IF GTTIPS_WILDHEAP -->
+		<script src="//static.wildheap.com/tooltip.js"></script>{# dead? #}
+		<script>var WHTooltips = {"colors": true, "icons": true, "rename": true}</script>
+	<!-- ENDIF -->
+	<!-- IF GTTIPS_LOLTIP -->
+		<script src="http://www.arcana-gaming.com/Content/plugins/arcana-loltip/js"></script>{# doesn't support https #}
+	<!-- ENDIF -->
+	<!-- IF GTTIPS_XIVDB -->
+		<script src="//xivdb.com/tooltips.js"></script>
+		<script>var xivdb_tooltips = {'replaceName' : true,	'colorName' : true,	'showIcon' : true };</script>
+	<!-- ENDIF -->
+	<!-- IF GTTIPS_SWTOR -->
+		<script src="http://static2.askmrrobot.com/swtor/tooltips.js"></script>{# invalid https cert #}
+		<script>var amr_options = { color: true, icon: true, iconSize: 18, name: true };</script>
+	<!-- ENDIF -->
+	<!-- IF GTTIPS_ZAM -->
+		<script>var zam_tooltips = { addIcons: true, colorLinks: true, renameLinks: true };</script>
+		<script src="//zam.zamimg.com/j/tooltips.js"></script>{# doesn't support https apparently, even though the website says it does #}
+	<!-- ENDIF -->
+	<!-- IF GTTIPS_DESTINY -->
+		<script>var zam_tooltips = { addIcons: true, colorLinks: true, renameLinks: true };</script>
+		<script src="//desjs.zamimg.com/asset/js/tooltips.min.js"></script>
+	<!-- ENDIF -->
+	<!-- IF GTTIPS_ESOHEAD -->
+		<script>var zam_tooltips = { addIcons: true, colorLinks: true, renameLinks: true };</script>
+		<script src="//eso.zamimg.com/asset/js/tooltips.min.js"></script>{# invalid https cert but seems to work #}
+	<!-- ENDIF -->
+<!-- ENDIF -->
